@@ -903,7 +903,7 @@ content: "";
     border-left: 1px solid #eee;
     transition: 0.3s;
 }
-.table table td:hover {
+.table table tr:hover td{
   background-color: #faf7f7;
 }
 .table table img {
