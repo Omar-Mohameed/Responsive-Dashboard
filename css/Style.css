@@ -828,6 +828,9 @@ content: "";
   top: 0;
   transition: .3s;
 }
+.social-media .social i:hover {
+  transform: rotate(5deg);
+}
 .social-media .twitter i{
   background-color: #1da1f2;
 }
