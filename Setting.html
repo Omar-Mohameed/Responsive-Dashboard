@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="css/Style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/framework.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container d-flex">
+    <aside>
+      <h3 class="mt-0 txt-c">Elzero</h3>
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="Setting.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section>
+      <header>
+        <div class="input-search relative">
+          <i class="fa-solid fa-magnifying-glass search-i"></i>
+          <input class="p-10 rad-6 search relative fs-14" type="search" name="input-search" placeholder="Type A Keyword" id="">
+        </div>
+        <div class="icon d-flex align-center ">
+          <i class="fa-regular fa-bell fa-lg notification relative"></i>
+          <img class="red-50" src="imgs/avatar.png" alt="">
+        </div>
+      </header>
+      <h1 class="relative head">Settings</h1>
+      <!-- Start The Content -->
+      <div class=" content setting-page">
+        <!-- Start Site Control -->
+        <div class="box p-20 site-control">
+          <div class="sub-head">
+            <h2>Site Control</h2>
+            <p>Control The Website If There Is Maintenance</p>
+          </div>
+          <div class="control d-flex mb-15">
+            <div class="info">
+              <span class="d-block">Website Control</span>
+              <p>Open/Close Website And Type The Reason</p>
+            </div>
+            <div class="toggle">
+              <label for="toggle" class="label">
+              <input checked id="toggle" type="checkbox">
+              <div class="switch"></div>
+              </label>
+            </div>
+          </div>
+          <textarea placeholder="Close Message Content" name="" id="" ></textarea>
+        </div>
+        <!-- End Site Control -->
+
+        <!-- Start General Info -->
+        <div class="box p-20 general-info">
+          <div class="sub-head">
+            <h2>General Info</h2>
+            <p>General Information About Your Account</p>
+          </div>
+          <div class="first-name mb-15">
+            <label class="d-block mb-10 c-grey" for="firstName">First Name</label>
+            <input type="text" name="" id="firstName" placeholder="First Name">
+          </div>
+          <div class="last-name mb-15">
+            <label class="d-block mb-10 c-grey" for="lastName">Last Name</label>
+            <input type="text" name="" id="lastName" placeholder="Last Name">
+          </div>
+          <div class="email">
+            <label class="d-block mb-10 c-grey" for="e-mail">Email</label>
+            <div>
+            <input type="text" name="" disabled id="e-mail" placeholder="O@nn.com">
+            <a href="#">Change</a>
+            </div>  
+          </div>
+        </div>
+        <!-- End General Info -->
+
+        <!-- Start Security Info -->
+        <div class="box p-20 security-info">
+          <div class="sub-head">
+            <h2>Security Info</h2>
+            <p>Security Information About Your Account</p>
+          </div>
+          <div class="pass control mb-15">
+            <div class="info">
+              <p>Password</p>
+              <span class="c-grey fs-14">Last Change On 25/10/2021</span>
+            </div>
+            <a href="##">Change</a>
+          </div>
+          <div class="pass control mb-15">
+            <div class="info">
+              <p>Two-Factor Authentication</p>
+              <span class="c-grey fs-14">Enable/Disable The Feature</span>
+            </div>
+            <div class="toggle">
+              <label for="toggle2" class="label">
+              <input checked id="toggle2" type="checkbox">
+              <div class="switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="devices control">
+            <div class="info">
+              <p>Devices</p>
+              <span class="c-grey fs-14">Check The Login Devices List</span>
+            </div>
+            <a href="##">Devices</a>
+          </div>
+        </div>
+        <!-- End Security Info -->
+
+        <!-- Start Social Info -->
+        <div class="box p-20 social-info">
+          <div class="sub-head">
+            <h2>Social Info</h2>
+            <p>Social Media Information</p>
+          </div>
+          <div class="input-social">
+            <i class="fa-brands fa-twitter"></i>
+            <input type="text" placeholder="Twitter Username">
+          </div>
+          <div class="input-social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <input type="text" placeholder="Facebook Username">
+          </div>
+          <div class="input-social">
+            <i class="fa-brands fa-linkedin"></i>
+            <input type="text" placeholder="Linkedin Username">
+          </div>
+          <div class="input-social">
+            <i class="fa-brands fa-youtube"></i>
+            <input type="text" placeholder="Youtube Username">
+          </div>
+        <!-- End Social Info -->
+
+      </div>
+      <!-- End The Content -->
+    </section>
+  </div>
+  <script></script>
+</body>
+</html>
