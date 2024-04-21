@@ -833,6 +833,9 @@ content: "";
   top: 0;
   transition: .3s;
 }
+.social-media .social i:hover {
+  transform : rotate(5deg);
+}
 .social-media .twitter i{
   background-color: #1da1f2;
 }
@@ -959,6 +962,30 @@ content: "";
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--blue-color);opacity: 1;
+}
+
+
+.arrow-up{
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right : 25px;
+  bottom: 25px;
+  z-index: 1001;
+  background-color: var(--blue-alt-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease .4s;
+  opacity: 0;
+}
+.arrow-up.show{
+  opacity: 1;
 }
 
 /*******************************************************/
@@ -1170,6 +1197,134 @@ section .content.setting-page {
 .social-info .input-social input:focus::placeholder {
   opacity: 0;
 }
-
-
 /* End Social Info */
+/* Start Widgets Control  */
+.widgits .check-boxes .check input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.widgits .check-boxes .check label{
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.widgits .check-boxes .check label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: 50%;
+  border: 2px solid var(--grey-color);
+  margin-top: -8px;
+  border-radius: 4px;
+}
+.widgits .check-boxes .check label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: var(--blue-color);
+  color: white;
+  margin-top: -8px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  transition: .3s;
+}
+.widgits .check-boxes .check label:hover::before {
+  border-color: var(--blue-color);
+}
+.widgits .check-boxes .check input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
+/* End Widgets Control  */
+/* Start Backup Manager */
+
+.backup-manager .backup label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.backup-manager .backup input[type = "radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.backup-manager .backup label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid var(--grey-color);
+}
+.backup-manager .backup label::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 4px;
+  top: 4.5px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  transition: .3s;
+  transform: scale(0);
+}
+.backup-manager .backup input[type = "radio"]:checked + label::after {
+  transform: scale(1);
+}
+.backup-manager .backup input[type = "radio"]:checked + label::before {
+  border-color: var(--blue-color);
+}
+
+.backup-manager .choices {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+.backup-manager .choices input[type = "radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+}
+.backup-manager .choices .server {
+  width: 100%;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: .5s;
+}
+.backup-manager .choices .server label{
+  margin: 15px;
+  cursor: pointer;
+  display: block;
+}
+.backup-manager .choices .server label i{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.backup-manager .choices input[type = "radio"]:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+@media (max-width: 768px) {
+  .backup-manager .choices {
+    flex-wrap: wrap;
+  }
+}
+/* End Backup Manager */

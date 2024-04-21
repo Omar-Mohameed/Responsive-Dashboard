@@ -597,14 +597,28 @@
       <!-- End Projects -->
     </section>
   </div>
-  <!-- <script>
-    let input = document.querySelector("input[name='input-search']");
-    input.addEventListener("focus", function () {
-      input.placeholder = '';
-    })
-    input.addEventListener("blur", function () {
-      input.placeholder = 'Type A Keyword';
-    })
-  </script> -->
+  <div class="arrow-up">
+    <span><i class="fa-solid fa-arrow-up fa-beat-fade"></i></span>
+  </div>
+  <script>
+    // let input = document.querySelector("input[name='input-search']");
+    // input.addEventListener("focus", function () {
+    //   input.placeholder = '';
+    // })
+    // input.addEventListener("blur", function () {
+    //   input.placeholder = 'Type A Keyword';
+    // }) 
+
+    let arrow = document.querySelector(".arrow-up");
+    window.onscroll = function () {
+      this.scrollY >= 500 ? arrow.classList.add("show") : arrow.classList.remove("show");
+    }
+    arrow.onclick = function () {
+      window.scrollTo ({
+        top : 0 ,
+        behavior: "smooth",
+      });
+    }
+  </script>
 </body>
 </html>

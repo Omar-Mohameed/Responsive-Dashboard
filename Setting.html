@@ -185,11 +185,106 @@
             <input type="text" placeholder="Youtube Username">
           </div>
         <!-- End Social Info -->
-
       </div>
+      <!-- End Social Info -->
+
+      <!--Start Widgets Control -->
+      <div class="box p-20 widgits">
+        <div class="sub-head">
+          <h2>Widgets Control</h2>
+          <p>Show/Hide Widgets</p>
+        </div>
+        <div class="check-boxes">
+          <div class="check mb-15">
+            <input type="checkbox" checked name="" id="box1">
+            <label for="box1">Quick Draft</label>
+          </div>
+          <div class="check mb-15">
+            <input type="checkbox" checked name="" id="box2">
+            <label for="box2">Yearly Targets</label>
+          </div>
+          <div class="check mb-15">
+            <input type="checkbox" checked name="" id="box3">
+            <label for="box3">Tickets Statistics</label>
+          </div>
+          <div class="check mb-15">
+            <input type="checkbox" checked name="" id="box4">
+            <label for="box4">Latest News</label>
+          </div>
+          <div class="check mb-15">
+            <input type="checkbox"  name="" id="box5">
+            <label for="box5">Latest Tasks</label>
+          </div>
+          <div class="check mb-10">
+            <input type="checkbox" checked name="" id="box6">
+            <label for="box6">Top Search Items</label>
+          </div>
+        </div>
+      </div>
+        <!--  End Widgets Control -->
+
+        <!-- Start Backup Manager -->
+        <div class="box p-20 backup-manager">
+          <div class="sub-head">
+            <h2>Backup Manager</h2>
+            <p>Control Backup Time And Location</p>
+          </div>
+          <div class="backup mb-15">
+            <input type="radio" name="time" id="backup1" checked>
+            <label for="backup1">Daily</label>
+          </div>
+          <div class="backup mb-15">
+            <input type="radio" name="time" id="backup2">
+            <label for="backup2">Weakly</label>
+          </div>
+          <div class="backup mb-20">
+            <input type="radio" name="time" id="backup3">
+            <label for="backup3">Monthly</label>
+          </div>
+          <div class="choices">
+            <input type="radio" name="server" id="One" checked>
+            <div class="server">
+              <label for="One">
+                <i class="fa-solid fa-server"></i>
+                Megaman
+              </label>
+            </div>
+
+            <input type="radio" name="server" id="Two">
+            <div class="server">
+              <label for="Two">
+                <i class="fa-solid fa-server"></i>
+                Zero
+              </label>
+            </div>
+
+            <input type="radio" name="server" id="Three">
+            <div class="server">
+              <label for="Three">
+                <i class="fa-solid fa-server"></i>
+                Sigma
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- End Backup Manager -->
       <!-- End The Content -->
     </section>
   </div>
-  <script></script>
+  <div class="arrow-up">
+    <span><i class="fa-solid fa-arrow-up fa-beat-fade"></i></span>
+  </div>
+  <script>
+    let arrow = document.querySelector(".arrow-up");
+    window.onscroll = function () {
+      this.scrollY >= 350 ? arrow.classList.add("show") : arrow.classList.remove("show");
+    }
+    arrow.onclick = function () {
+      window.scrollTo ({
+        top : 0 ,
+        behavior: "smooth",
+      });
+    }
+  </script>
 </body>
 </html>
