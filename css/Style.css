@@ -68,7 +68,6 @@ aside ul {
   text-align: start;
 }
 aside ul li {
-  padding: 10px;
     margin-bottom: 5px;
     transition: 0.3s;
     border-radius: 6px;
@@ -78,6 +77,7 @@ aside ul li {
 aside ul li a {
   font-size: 14px;
   display: block;
+  padding: 10px;
 }
 aside ul li:hover,
 aside ul li.active {
@@ -1328,3 +1328,189 @@ section .content.setting-page {
   }
 }
 /* End Backup Manager */
+/* End The Setting Page */
+/* Start Profile Page */
+
+.generalinfo {
+  display: flex;
+  align-items: center;
+}
+.generalinfo .left {
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .generalinfo .left {
+      border-right: 1px solid #eee;
+  }
+}
+.generalinfo .left img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.generalinfo .left h3 {
+  margin: 0;
+}
+.generalinfo .left p {
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+.generalinfo .left .level {
+  width: 70%;
+  height: 8px;
+  border-radius: 6px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: auto;
+} 
+.generalinfo .left .level span {
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+  display: block;
+}
+/* Start Right Side */
+
+.generalinfo .right .box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  transition: .3s;
+}
+.generalinfo .right .box:not(:last-child) {
+  border-bottom: 1px solid #eee; 
+}
+.generalinfo .right .box h4 {
+  margin: 0;
+  color: var(--grey-color);
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+}
+.generalinfo .right .box > div {
+  min-width: 250px;
+  padding-top: 10px;
+}
+.generalinfo .right .box > .toggle .switch {
+  height: 20px;
+}
+.generalinfo .right .box > .toggle .switch::before {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+.generalinfo .right .box > .toggle input:checked ~ .switch::before {
+  left: 62px;
+}
+@media (max-width: 767px) {
+  .generalinfo {
+    flex-direction: column;
+  }
+  .generalinfo .right .box h4 {
+    text-align: center;
+  }
+  .generalinfo .right .box > div {
+    text-align: center;
+  }
+  .generalinfo .right .box > .toggle {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Start Skills And Activities */
+.skillsandactivity{
+  display: flex;
+  gap: 15px;
+}
+@media (min-width: 768px) {
+  .skillsandactivity .activities {
+    flex-basis: 67%;
+  }
+  .skillsandactivity .skills {
+    flex-basis: 33%;
+  }
+}
+.skillsandactivity .skills ul {
+  margin: 0;
+}
+.skillsandactivity .skills ul li{
+  padding: 15px 0;
+}
+.skillsandactivity .skills ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.skillsandactivity .skills ul li span {
+  padding: 4px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.skillsandactivity .activities .activity {
+  display: flex;
+}
+.skillsandactivity .activities .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.skillsandactivity .activities .activity span {
+  display: block;
+}
+.skillsandactivity .activities .activity img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.skillsandactivity .activities .activity .details,
+.skillsandactivity .activities .activity .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Medias */
+@media (min-width: 768px) {
+  .skillsandactivity .activities .activity .date {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+@media (max-width: 950px) and (min-width: 768px) {
+  .skillsandactivity .skills ul li span {
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .skillsandactivity {
+    flex-direction: column;
+    gap: 0;
+  }
+  .skillsandactivity .activities {
+    text-align: center;
+  }
+  .skillsandactivity .skills {
+    text-align: center;
+  }
+  .skillsandactivity .activities .activity {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .skillsandactivity .activities .activity .date {
+    margin-top: 15px;
+  }
+  .skillsandactivity .activities .activity .details span:first-child {
+    margin: 15px 0 10px 0;
+  }
+  .skillsandactivity .activities .activity img{
+    margin: 0;
+  }
+}
+/* End Skills And Activities */

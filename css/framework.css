@@ -38,6 +38,15 @@
 .mb-15 {
   margin-bottom: 15px;
 }
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
 /* End Margin */
 
 
@@ -86,6 +95,9 @@
 }
 .c-red {
   color: var(--red-color);
+}
+.c-eee {
+  background-color: #eee;
 }
 .bg-eee {
   background-color: #eee;

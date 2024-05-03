@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <div class="container d-flex">
+    <aside>
+      <h3 class="mt-0 txt-c">Elzero</h3>
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="Setting.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="Profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section>
+      <header>
+        <div class="input-search relative">
+          <i class="fa-solid fa-magnifying-glass search-i"></i>
+          <input class="p-10 rad-6 search relative fs-14" type="search" name="input-search" placeholder="Type A Keyword" id="">
+        </div>
+        <div class="icon d-flex align-center ">
+          <i class="fa-regular fa-bell fa-lg notification relative"></i>
+          <img class="red-50" src="imgs/avatar.png" alt="">
+        </div>
+      </header>
+      <h1 class="relative head">Profile</h1>
+      <!-- Start The Content -->
+      <div class="content profile-page" >
+        <!-- Start GeneralInfo -->
+        <div class="generalinfo bg-white rad-10">
+          <div class="left">
+            <img src="imgs/avatar.png" alt="">
+            <h3>Osama Elzero</h3>
+            <p>Level 20</p>
+            <div class="level">
+              <span style="width: 70%;"></span>
+            </div>
+            <div class="stars mt-10 mb-10">
+              <i class="fa-solid fa-star c-orange fs-13"></i>
+              <i class="fa-solid fa-star c-orange fs-13"></i>
+              <i class="fa-solid fa-star c-orange fs-13"></i>
+              <i class="fa-solid fa-star c-orange fs-13"></i>
+              <i class="fa-solid fa-star c-orange fs-13"></i>
+            </div>
+            <p class="c-grey fs-14">550 Rating</p>
+          </div>
+          <div class="right">
+            <div class="box">
+              <h4>General Information</h4>
+              <div class="fs-14"><span class="c-grey">Full Name : </span>Osama Mohamed</div>
+              <div class="fs-14"><span class="c-grey">Gender: </span>Male</div>
+              <div class="fs-14"><span class="c-grey">Country: </span>Egypt</div>
+              <div class="toggle">
+                <label for="toggle" class="label">
+                <input checked id="toggle" type="checkbox">
+                <div class="switch"></div>
+                </label>
+              </div>
+            </div>
+            <div class="box">
+              <h4>Personal Information</h4>
+              <div class="fs-14"><span class="c-grey">Email : </span>o@nn.sa</div>
+              <div class="fs-14"><span class="c-grey">Phone: </span>019123456789</div>
+              <div class="fs-14"><span class="c-grey">Date Of Birth: </span>25/10/1982</div>
+              <div class="toggle">
+                <label for="toggle2" class="label">
+                <input id="toggle2" type="checkbox">
+                <div class="switch"></div>
+                </label>
+              </div>
+            </div>
+            <div class="box">
+              <h4>Job Information</h4>
+              <div class="fs-14"><span class="c-grey">Title : </span>Full Stack Developer</div>
+              <div class="fs-14"><span class="c-grey">Programming Language: </span>Python</div>
+              <div class="fs-14"><span class="c-grey">Years Of Experience: </span>15+</div>
+              <div class="toggle">
+                <label for="toggle3" class="label">
+                <input checked id="toggle3" type="checkbox">
+                <div class="switch"></div>
+                </label>
+              </div>
+            </div>
+            <div class="box">
+              <h4>Billing Information</h4>
+              <div class="fs-14"><span class="c-grey">Payment Method : </span>Paypal</div>
+              <div class="fs-14"><span class="c-grey">Email: </span>email@website.com</div>
+              <div class="fs-14"><span class="c-grey">Subscription: </span>Monthly</div>
+              <div class="toggle">
+                <label for="toggle4" class="label">
+                <input id="toggle4" type="checkbox">
+                <div class="switch"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End The General Info -->
+        <!-- Start Skills -->
+        <div class="skillsandactivity">
+          <div class="box p-20 skills mt-15">
+            <div class="sub-head">
+              <h2>My Skills</h2>
+              <p>Complete Skills List</p>
+            </div>
+            <ul>
+              <li>
+                <span>HTML</span>
+                <span>Pugjs</span>
+                <span>CSS</span>
+              </li>
+              <li>
+                <span>CSS</span>
+                <span>SASS</span>
+                <span>Stylus</span>
+              </li>
+              <li>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+              </li>
+              <li>
+                <span>Vuejs</span>
+                <span>Reactjs</span>
+              </li>
+              <li>
+                <span>Jest</span>
+                <span>Jasmine</span>
+              </li>
+              <li>
+                <span>PHP</span>
+                <span>Laravel</span>
+              </li>
+              <li>
+                <span>Python</span>
+                <span>Django</span>
+              </li>
+            </ul>
+          </div>
+          <div class="box p-20 activities mt-15">
+            <div class="sub-head">
+              <h2>Latest Activities</h2>
+              <p>Latest Activities Done By The User</p>
+            </div>
+            <div class="activity">
+                <img src="imgs/activity-01.png" alt="">
+                <div class="details">
+                  <span class="mb-10">Store</span>
+                  <span class="c-grey">Bought The Mastering Python Course</span>
+                </div>
+                <div class="date">
+                  <span class="mb-10">18:10</span>
+                  <span class="c-grey">Yesterday</span>
+                </div>
+              </div>
+
+            <div class="activity">
+                <img src="imgs/activity-02.png" alt="">
+                <div class="details">
+                  <span class="mb-10">Academy</span>
+                  <span class="c-grey">Got The PHP Certificate</span>
+                </div>
+                <div class="date">
+                  <span class="mb-10">16:05</span>
+                  <span class="c-grey">Yesterday</span>
+                </div>
+              </div>
+
+            <div class="activity">
+                <img src="imgs/activity-03.png" alt="">
+                <div class="details">
+                  <span class="mb-10">Badges</span>
+                  <span class="c-grey">Unlocked The 10 Skills Badge</span>
+                </div>
+                <div class="date">
+                  <span class="mb-10">18:05</span>
+                  <span class="c-grey">Yesterday</span>
+                </div>
+              </div>
+
+            <div class="activity">
+                <img src="imgs/activity-03.png" alt="">
+                <div class="details">
+                  <span class="mb-10">Store</span>
+                  <span class="c-grey">Bought The Typescript Course</span>
+                </div>
+                <div class="date">
+                  <span class="mb-10">12:05</span>
+                  <span class="c-grey">Yesterday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Skills -->
+      </div>
+      <!-- End The Content -->
+      </section>
+    </div>
+
+    <div class="arrow-up">
+      <span><i class="fa-solid fa-arrow-up fa-beat-fade"></i></span>
+    </div>
+    <script>
+      let arrow = document.querySelector(".arrow-up");
+      window.onscroll = function () {
+        this.scrollY >= 350 ? arrow.classList.add("show") : arrow.classList.remove("show");
+      }
+      arrow.onclick = function () {
+        window.scrollTo ({
+          top : 0 ,
+          behavior: "smooth",
+        });
+      }
+    </script>
+</body>
+</html>
